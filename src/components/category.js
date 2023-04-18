@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { BsArrowRightCircle } from 'react-icons/bs';
+import { NavLink } from 'react-router-dom';
 import { getData } from '../redux/category/categorySlice';
 import a from '../images/f.png';
+import b from '../images/d.jpg';
 import './styling/categories.css';
-// BsArrowRightCircle,
 
 const Categories = () => {
   const { dataStore, isLoading } = useSelector((store) => store.brewery);
@@ -31,6 +33,10 @@ const Categories = () => {
         {
           dataStore.map((data) => (
             <div className="breweries" key={data.id}>
+              <div>
+                <img src={b} alt="beer" />
+                <NavLink to="/breweryAbout"><BsArrowRightCircle /></NavLink>
+              </div>
               <h1>{data.name}</h1>
             </div>
           ))
