@@ -20,7 +20,9 @@ const Categories = () => {
   }
 
   return (
-    <div>ikoote</div>
+    <div>
+      <div className="country">united states</div>
+    </div>
   );
 };
 
