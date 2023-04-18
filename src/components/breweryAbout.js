@@ -21,7 +21,7 @@ const BreweryAbout = () => {
     <div>
       <div><h1>ikoote</h1></div>
       <div className="aboutData" key={showData.phone}>
-        <h1>{showData.name}</h1>
+        <h1>{showData.phone}</h1>
       </div>
     </div>
   );
