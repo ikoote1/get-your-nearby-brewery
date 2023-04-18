@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-// import { BsArrowRightCircle } from 'react-icons/bs';
+import { BsArrowRightCircle } from 'react-icons/bs';
 
 export default function Detail({ item }) {
   return (
@@ -29,7 +29,7 @@ export default function Detail({ item }) {
           <span>{item.brewery_type}</span>
         </li>
         <li className="list-group-item d-flex justify-content-between text-white fw-bold">
-          <span>Postal-code</span>
+          <span>Postal_code</span>
           <span>{item.postal_code}</span>
         </li>
         <li className="list-group-item d-flex justify-content-between text-white fw-bold">
@@ -61,16 +61,16 @@ export default function Detail({ item }) {
 
 Detail.propTypes = {
   item: PropTypes.shape({
-    rank: PropTypes.string,
-    name: PropTypes.string,
-    symbol: PropTypes.string,
-    supply: PropTypes.string,
-    maxSupply: PropTypes.string,
-    marketCapUsd: PropTypes.string,
-    volumeUsd24Hr: PropTypes.string,
-    priceUsd: PropTypes.string,
-    changePercent24Hr: PropTypes.string,
-    vwap24Hr: PropTypes.string,
+    Name: PropTypes.string,
+    State: PropTypes.string,
+    City: PropTypes.string,
+    Longitude: PropTypes.string,
+    Latitude: PropTypes.string,
+    Address: PropTypes.string,
+    Phone: PropTypes.string,
+    Postal_code: PropTypes.string,
+    // Website_url: PropTypes.string,
+    // vwap24Hr: PropTypes.string,
     explorer: PropTypes.string,
   }).isRequired,
 };
