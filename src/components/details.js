@@ -61,16 +61,16 @@ export default function Detail({ item }) {
 
 Detail.propTypes = {
   item: PropTypes.shape({
-    Name: PropTypes.string,
-    State: PropTypes.string,
-    City: PropTypes.string,
-    Longitude: PropTypes.string,
-    Latitude: PropTypes.string,
-    Address: PropTypes.string,
+    name: PropTypes.string,
+    state: PropTypes.string,
+    city: PropTypes.string,
+    longitude: PropTypes.string,
+    latitude: PropTypes.string,
+    address_1: PropTypes.string,
     Phone: PropTypes.string,
-    Postal_code: PropTypes.string,
-    // Website_url: PropTypes.string,
-    // vwap24Hr: PropTypes.string,
-    explorer: PropTypes.string,
+    postal_code: PropTypes.string,
+    website_url: PropTypes.string,
+    street: PropTypes.string,
+    brewery_type: PropTypes.string,
   }).isRequired,
 };

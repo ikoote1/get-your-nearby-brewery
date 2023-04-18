@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getData } from '../redux/category/categorySlice';
 import Detail from './details';
@@ -19,13 +20,14 @@ const BreweryAbout = () => {
     );
   }
 
+  const { id } = useParams();
   const data = dataStore.find((item) => item.id === id);
 
   return (
     <div>
       <div><h1>ikoote</h1></div>
       <div className="aboutData">
-        {data && <Detail item={data} key={data.phone} />}
+        {data && <Detail item={data} key={data.id} />}
       </div>
     </div>
   );
