@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
-import { getData } from '../redux/category/categorySlice';
+import { getData, showData } from '../redux/category/categorySlice';
 import a from '../images/f.png';
 import b from '../images/d.jpg';
 import './styling/categories.css';
@@ -22,6 +22,9 @@ const Categories = () => {
       <div><h1>Loading</h1></div>
     );
   }
+  // const handleClick = (id) => {
+  //   dispatch(showData(id));
+  // };
 
   return (
     <div>
@@ -29,15 +32,26 @@ const Categories = () => {
         <img src={a} alt="map" />
         <h1>united states</h1>
       </div>
-      <div>
+      <div className="breweries">
         {
           dataStore.map((data) => (
-            <div className="breweries" key={data.id}>
+            <div className="brewery" key={data.phone}>
               <div>
                 <img src={b} alt="beer" />
-                <NavLink to="/breweryAbout"><BsArrowRightCircle /></NavLink>
+                <NavLink to={`/breweryAbout/${data.phone}`}>
+                  <BsArrowRightCircle className="logo" onClick={() => dispatch(showData(data.phone))} />
+                </NavLink>
               </div>
-              <h1>{data.name}</h1>
+              <h1>
+                City:
+                {' '}
+                {data.city}
+              </h1>
+              <h1>
+                Name:
+                {' '}
+                {data.name}
+              </h1>
             </div>
           ))
         }

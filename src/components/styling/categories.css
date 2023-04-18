@@ -17,3 +17,48 @@
     padding: 10%;
     color: whitesmoke;
 }
+
+.brewery{
+    width: 100%;
+    background-color: rgb(240, 87, 138);
+    border-radius: 5%;
+}
+
+.brewery>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.brewery>div>img{
+    width: 70%;
+}
+
+.logo{
+    font-size: 250%;
+    color: white;
+    padding-top: 10px;
+}
+
+.brewery>h1{
+    color:white;
+}
+
+@media only screen and (max-width: 992px) {
+    .breweries{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .breweries{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        background-color: pink;
+    }
+}

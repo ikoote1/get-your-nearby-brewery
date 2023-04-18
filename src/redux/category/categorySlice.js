@@ -7,7 +7,7 @@ export const getData = createAsyncThunk('brewery/getData', async () => {
   try {
     const response = await fetch(url);
     const data = response.json();
-    console.log(data);
+    // console.log(data);
     return data;
   } catch (error) {
     return error;
@@ -20,6 +20,12 @@ const categorySlice = createSlice(
     initialState: {
       dataStore: [],
       isLoading: true,
+    },
+    reducers: {
+      showData: (state, action) => ({
+        ...state,
+        dataSt: state.dataStore.filter((item) => item.id === action.payload),
+      }),
     },
     extraReducers: (builder) => {
       builder
@@ -42,4 +48,5 @@ const categorySlice = createSlice(
   },
 );
 
+export const { showData } = categorySlice.actions;
 export default categorySlice.reducer;
