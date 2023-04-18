@@ -1,0 +1,19 @@
+.country{
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    width: 100%;
+    max-height: 400px;
+}
+
+.country>img{
+    width: 60%;
+}
+
+.country>h1{
+    width: 40%;
+    font-size: auto;
+    align-items: center;
+    padding: 10%;
+    color: whitesmoke;
+}

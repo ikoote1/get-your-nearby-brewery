@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getData } from '../redux/category/categorySlice';
-import usa1 from '../images/usa1.png';
+import usa2 from '../images/usa2.png';
 import './styling/categories.css';
 // BsArrowRightCircle,
 
@@ -24,7 +24,7 @@ const Categories = () => {
   return (
     <div>
       <div className="country">
-        <img src={usa1} alt="usa1" />
+        <img src={usa2} alt="usa1" />
         <h1>united states</h1>
       </div>
     </div>
