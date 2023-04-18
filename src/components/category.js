@@ -4,7 +4,7 @@ import { getData } from '../redux/category/categorySlice';
 // BsArrowRightCircle,
 
 const Categories = () => {
-  const { dataStore, isLoading } = useSelector((store) => store.category);
+  const { dataStore, isLoading } = useSelector((store) => store.brewery);
   const dispatch = useDispatch();
 
   useEffect(() => {

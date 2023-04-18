@@ -1,6 +1,7 @@
 import { BsChevronLeft } from 'react-icons/bs';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import "./styling/nav.css"
 
 const Nav = () => (
   <nav>
