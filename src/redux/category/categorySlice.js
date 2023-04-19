@@ -24,7 +24,7 @@ const categorySlice = createSlice(
     reducers: {
       showData: (state, action) => ({
         ...state,
-        dataSt: state.dataStore.filter((item) => item.id === action.payload),
+        brewery: state.dataStore.filter((item) => item.id === action.payload),
       }),
     },
     extraReducers: (builder) => {

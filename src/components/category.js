@@ -38,8 +38,12 @@ const Categories = () => {
             <div className="brewery" key={data.phone}>
               <div>
                 <img src={b} alt="beer" />
-                <NavLink to={`/breweryAbout/${data.phone}`}>
-                  <BsArrowRightCircle className="logo" onClick={() => dispatch(showData(data.phone))} />
+                <NavLink to={{
+                  pathname: `/breweryAbout/${data.phone}`,
+                  state: { stateParam: true },
+                }}
+                >
+                  <BsArrowRightCircle className="logo" onClick={() => dispatch(showData(data.id))} />
                 </NavLink>
               </div>
               <h1>

@@ -5,6 +5,7 @@ import { getData } from '../redux/category/categorySlice';
 import Detail from './details';
 
 const BreweryAbout = () => {
+  const params = useParams();
   const { dataStore, isLoading } = useSelector((store) => store.brewery);
   const dispatch = useDispatch();
 
@@ -14,18 +15,16 @@ const BreweryAbout = () => {
     }
   }, [dispatch, dataStore]);
 
+  const data = dataStore.find((item) => item.phone === params.breweryName);
+
   if (isLoading) {
     return (
       <div>Loading</div>
     );
   }
 
-  const { id } = useParams();
-  const data = dataStore.find((item) => item.id === id);
-
   return (
     <div>
-      <div><h1>ikoote</h1></div>
       <div className="aboutData">
         {data && <Detail item={data} key={data.id} />}
       </div>

@@ -5,7 +5,7 @@ export default function Detail({ item }) {
   return (
     <div className="mt-3">
       <div>
-        <h2 className="text-center mb-3">Crypto Currency Data</h2>
+        <h2 className="text-center mb-3">{item.name}</h2>
       </div>
       <ul className="list-unstyled list-group mb-3">
         <li className="list-group-item d-flex justify-content-between text-white fw-bold">
