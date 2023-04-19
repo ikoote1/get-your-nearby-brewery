@@ -11,43 +11,43 @@ export default function Detail({ item }) {
         <h2>{item.name}</h2>
       </div>
       <ul className="list">
-        <li>
+        <li className="he">
           <span>Name</span>
           <span>{item.name}</span>
         </li>
-        <li>
+        <li className="she">
           <span>State</span>
           <span>{item.state}</span>
         </li>
-        <li>
+        <li className="he">
           <span>City</span>
           <span>{item.city}</span>
         </li>
-        <li>
+        <li className="she">
           <span>Street</span>
           <span>{item.street}</span>
         </li>
-        <li>
+        <li className="he">
           <span>Brewery-type</span>
           <span>{item.brewery_type}</span>
         </li>
-        <li>
+        <li className="she">
           <span>Postal_code</span>
           <span>{item.postal_code}</span>
         </li>
-        <li>
+        <li className="he">
           <span>Address</span>
           <span>{item.address_1}</span>
         </li>
-        <li>
+        <li className="she">
           <span>Longitude</span>
           <span>{parseFloat(item.longitude).toFixed(4)}</span>
         </li>
-        <li>
+        <li className="he">
           <span>Latitude</span>
           <span>{parseFloat(item.latitude).toFixed(4)}</span>
         </li>
-        <li>
+        <li className="she">
           <span>Explorer</span>
           <a href={item.website_url}>
             <BsArrowRightCircle />
