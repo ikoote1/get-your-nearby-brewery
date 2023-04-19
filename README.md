@@ -62,7 +62,7 @@ Here is my short video explaining about the project: [Presentation](https://www.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See live here](https://ikoote1.github.io/get-your-nearby-brewery/)
+- [See live here](https://get-your-breweries.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
