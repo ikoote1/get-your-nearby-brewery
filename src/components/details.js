@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import image from ''
 
 export default function Detail({ item }) {
   return (
@@ -7,51 +8,47 @@ export default function Detail({ item }) {
       <div>
         <h2 className="text-center mb-3">{item.name}</h2>
       </div>
-      <ul className="list-unstyled list-group mb-3">
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+      <ul className="list">
+        <li>
           <span>Name</span>
           <span>{item.name}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>State</span>
           <span>{item.state}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>City</span>
           <span>{item.city}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Street</span>
           <span>{item.street}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Brewery-type</span>
           <span>{item.brewery_type}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Postal_code</span>
           <span>{item.postal_code}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Address</span>
           <span>{item.address_1}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Longitude</span>
           <span>{parseFloat(item.longitude).toFixed(4)}</span>
         </li>
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Latitude</span>
           <span>{parseFloat(item.latitude).toFixed(4)}</span>
         </li>
-        {/* <li className="list-group-item d-flex justify-content-between text-white fw-bold">
-          <span>Vwap24Hr</span>
-          <span>{parseFloat(item.vwap24Hr).toFixed(4)}</span>
-        </li> */}
-        <li className="list-group-item d-flex justify-content-between text-white fw-bold">
+        <li>
           <span>Explorer</span>
-          <a href={item.website_url} target="_blank" rel="noopener noreferrer">
-            <BsArrowRightCircle className="text-white fs-4" />
+          <a href={item.website_url}>
+            <BsArrowRightCircle />
           </a>
         </li>
       </ul>
