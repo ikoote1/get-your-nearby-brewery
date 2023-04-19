@@ -1,13 +1,13 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:1.5% 2% 0 2%;
-    background-color: rgb(240, 87, 138);
-    height: 50px;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5% 2% 0 2%;
+  background-color: rgb(240, 87, 138);
+  height: 50px;
 }
 
-.nav{
-    font-size: 150%;
-    color: whitesmoke;
+.nav {
+  font-size: 150%;
+  color: whitesmoke;
 }
