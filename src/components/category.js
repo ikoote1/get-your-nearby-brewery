@@ -22,9 +22,6 @@ const Categories = () => {
       <div><h1>Loading</h1></div>
     );
   }
-  // const handleClick = (id) => {
-  //   dispatch(showData(id));
-  // };
 
   return (
     <div>

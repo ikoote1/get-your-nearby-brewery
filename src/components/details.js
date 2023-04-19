@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
-import image from ''
+import imag from '../images/d.jpg';
 
 export default function Detail({ item }) {
   return (
     <div className="mt-3">
-      <div>
-        <h2 className="text-center mb-3">{item.name}</h2>
+      <div className="text">
+        <img src={imag} alt="imag" />
+        <h2>{item.name}</h2>
       </div>
       <ul className="list">
         <li>
