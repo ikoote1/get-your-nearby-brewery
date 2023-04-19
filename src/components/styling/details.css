@@ -1,0 +1,36 @@
+.map{
+    width: 100%;
+    height: auto;
+    background-color: pink;
+}
+
+.text{
+    max-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.text>img{
+ width: 50%;
+}
+
+.text>h2{
+    font-size: 300%;
+    align-self: center;
+    padding: 5%;
+}
+
+.list>li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+span{
+    font-size: 25px;
+    color: white;
+}

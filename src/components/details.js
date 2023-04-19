@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import imag from '../images/d.jpg';
+import './styling/details.css';
 
 export default function Detail({ item }) {
   return (
-    <div className="mt-3">
+    <div className="map">
       <div className="text">
         <img src={imag} alt="imag" />
         <h2>{item.name}</h2>
