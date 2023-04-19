@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Categories from '../category';
+import BreweryAbout from '../breweryAbout';
 import store from '../../store';
 import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
@@ -14,7 +14,7 @@ describe('Details component', () => {
     const component = render(
       <BrowserRouter>
         <Provider store={store}>
-          <Categories />
+          <BreweryAbout />
         </Provider>
         ,
       </BrowserRouter>,

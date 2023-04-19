@@ -7,7 +7,6 @@ export const getData = createAsyncThunk('brewery/getData', async () => {
   try {
     const response = await fetch(url);
     const data = response.json();
-    // console.log(data);
     return data;
   } catch (error) {
     return error;
