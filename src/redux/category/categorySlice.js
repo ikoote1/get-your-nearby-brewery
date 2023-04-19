@@ -1,4 +1,3 @@
-// import React from 'react';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const url = 'https://api.openbrewerydb.org/v1/breweries';
