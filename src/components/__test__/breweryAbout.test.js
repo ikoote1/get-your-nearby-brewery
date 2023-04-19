@@ -1,10 +1,10 @@
 import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import React from 'react';
+import { Provider } from 'react-redux';
 import BreweryAbout from '../breweryAbout';
 import store from '../../store';
 import '@testing-library/jest-dom/extend-expect';
-import { Provider } from 'react-redux';
 
 window.scrollTo = jest.fn();
 

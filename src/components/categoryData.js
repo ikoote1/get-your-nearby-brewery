@@ -1,32 +1,24 @@
+// import { BrowserRouter } from 'react-router-dom';
+// import { render } from '@testing-library/react';
 // import React from 'react';
-// import { BsArrowRightCircle } from 'react-icons/bs';
-// import { NavLink } from 'react-router-dom';
-// import { showData } from '../redux/category/categorySlice';
-// import b from '../images/d.jpg';
+// import { Provider } from 'react-redux';
+// import Categories from '../category';
+// import store from '../../store';
+// import '@testing-library/jest-dom/extend-expect';
 
-// const CategoryData = () => (
-//   <div className="brewery" key={data.phone}>
-//     <div>
-//       <img src={b} alt="beer" />
-//       <NavLink to={{
-//         pathname: `/breweryAbout/${data.phone}`,
-//         state: { stateParam: true },
-//       }}
-//       >
-//         <BsArrowRightCircle className="logo" onClick={() => dispatch(showData(data.id))} />
-//       </NavLink>
-//     </div>
-//     <h1>
-//       City:
-//       {' '}
-//       {data.city}
-//     </h1>
-//     <h1>
-//       Name:
-//       {' '}
-//       {data.name}
-//     </h1>
-//   </div>
-// );
+// window.scrollTo = jest.fn();
 
-// export default CategoryData;
+// describe('Details component', () => {
+//   it('should render the data correctly', async () => {
+//     window.scrollTo.mockClear();
+//     const component = render(
+//       <BrowserRouter>
+//         <Provider store={store}>
+//           <Categories />
+//         </Provider>
+//         ,
+//       </BrowserRouter>,
+//     );
+//     expect(component.asFragment()).toMatchSnapshot();
+//   });
+// });
