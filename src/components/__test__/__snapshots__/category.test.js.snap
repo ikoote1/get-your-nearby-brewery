@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component should render the data correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Loading
+    </h1>
+  </div>
+  ,
+</DocumentFragment>
+`;
